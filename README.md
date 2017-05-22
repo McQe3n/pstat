@@ -10,7 +10,7 @@
 ### Обработка на данните
 Зареждаме данните чрез read.csv функцията или като ги import, (което е едно и също).
 
-# A tibble: 100,000 x 11
+>A tibble: 100,000 x 11
     step     type    amount    nameOrig oldbalanceOrg newbalanceOrig    nameDest oldbalanceDest newbalanceDest
    <int>    <chr>     <dbl>       <chr>         <dbl>          <dbl>       <chr>          <dbl>          <dbl>
 1      8  PAYMENT    220.34  C286053652         690.0         469.66  M827873651           0.00           0.00
@@ -23,7 +23,7 @@
 8      9 CASH_OUT 126861.68  C688927277        1349.0           0.00  C372374036      192395.14     9026847.12
 9      9 CASH_OUT 387926.52 C1516972151       20329.0           0.00  C872991067       38806.48      397146.28
 10     6    DEBIT   3525.54 C1254589807       24708.0       21182.46 C1330106945        8617.02       12142.56
-# ... with 99,990 more rows, and 2 more variables: isFraud <int>, isFlaggedFraud <int>
+ ... with 99,990 more rows, and 2 more variables: isFraud <int>, isFlaggedFraud <int>
 
 Понеже имаме много данни, взимаме част от тях за улеснение (100 000 наблюдения на 11 променливи), като използваме функцията samplе.
 
