@@ -33,7 +33,9 @@
 
 >paysim_s <- paysim_ds[sample(s_rows,s_size),] #paysim_ds e целия файл, 6362620 obs. of 11 variables
 
-Две от категорните променливи са проблемни (nameOrig, nameDest), понеже всяко тяхно наблюдение се чете като отделна променлива. 
+Две от категорните променливи са проблемни (nameOrig, nameDest), понеже всяко тяхно наблюдение се чете като отделна променлива.
+
+
 Използваме summary(paysim_s):
 
     step          type               amount           nameOrig         oldbalanceOrg      newbalanceOrig    
@@ -86,3 +88,4 @@ train: 69998 obs. of 9 variables
 От изображението се вижда, че променливите oldbalanceOrig и newbalanceOrig, както и oldbalanceDest и newbalanceDest са с висок коефициент на корелация, следователно може да премахнем oldbalanceOrig и oldbalanceDest.
 
 ##
+![tree](http://i.imgur.com/5l2pbFY.png)
