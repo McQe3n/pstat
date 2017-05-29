@@ -16,15 +16,3 @@ sum(is.na(paysim_ds))     #check for missing elements, returns NA if there are a
 
 #~~~~~~[partition data into train & test]
 #run data_partitioning.R
-
-
-
-
-#data.df <- data.frame(
-#  topic = c(ndest, each = 4)),
-#  duration  = c(6:9, 2:5, 4:7)
-#)
-#print(data.df)
-#boxplot(isfr ~ ndest, data = paysim, ylab = "Duration of conversation")
-
-#glm.fit = glm(isfr ~ ndest, family = binomial)
