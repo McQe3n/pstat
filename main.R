@@ -16,3 +16,12 @@ sum(is.na(paysim_ds))     #check for missing elements, returns NA if there are a
 
 #~~~~~~[partition data into train & test]
 #run data_partitioning.R
+
+#~~~~~~[check correlation between variables]
+#run check_corr.R
+
+#~~~~~~[logistic regression using train set and test model using test set]
+#run log_reg.R
+
+#~~~~~~[decision tree on all variables]
+#run dectree.R
