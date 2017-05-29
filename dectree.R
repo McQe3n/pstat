@@ -6,11 +6,11 @@ library(rpart)
 train$isFraud <- as.factor(train$isFraud)
 test$isFraud <- as.factor(test$isFraud)
 
-decisionTreeModel <- train(isFraud~.,method="rpart",data=train) # model with all variables on the training subset
+decisionTreeModel <- train(isFraud~.,method="rpart",data=train) 
 
-fancyRpartPlot(decisionTreeModel$finalModel) # fancy plot
+fancyRpartPlot(decisionTreeModel$finalModel)  
 
-test$pred <- predict(decisionTreeModel,test) # get predictions
+test$pred <- predict(decisionTreeModel,test)  
 test = test %>% mutate(accurate = 1*(isFraud == pred))
-table(test$pred,test$isFraud) # confusion matrix
-sum(test$accurate)/nrow(test) # accuracy %
+table(test$pred,test$isFraud) 
+sum(test$accurate)/nrow(test) 
