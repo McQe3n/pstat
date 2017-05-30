@@ -6,7 +6,8 @@ library(rpart)
 train$isFraud <- as.factor(train$isFraud)
 test$isFraud <- as.factor(test$isFraud)
 
-decisionTreeModel <- train(isFraud~.,method="rpart",data=train) 
+#decisionTreeModel <- train(isFraud~.,method="rpart",data=train)
+decisionTreeModel <- train(isFraud~amount + newbalanceOrig + newbalanceDest,method="rpart",data=train)
 
 fancyRpartPlot(decisionTreeModel$finalModel)  
 
